@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.devMode" value="false" />
+    <constant name="struts.mapper.alwaysSelectFullNamespace" value="false"/>
+    <constant name="struts.enable.SlashesInActionNames" value="true"/>
+    <constant name="struts.patternMatcher" value="namedVariable"/>
+	<package name="cric11" namespace="/cric11" extends="struts-default">
+		<action name="api/{version}/login" class="com.cric11.utility.MatchSquad"></action>
+		<action name="api/{version}/check" class="com.cric11.utility.MatchSquad" method="stringCheck"></action>
+		<action name="api/{version}/timercheck" class="com.cric11.utility.MatchSquad" method="timerCheck"></action>
+	</package>
+</struts>
