@@ -36,7 +36,7 @@ public class HibernateUtil implements ServletContextListener {
 		 configuration = new Configuration().configure();
 		session = configuration.buildSessionFactory();
 		
-		HibernateUtil.startMatchDataFetchScheduler();
+		//HibernateUtil.startMatchDataFetchScheduler();
 		
 	}
 

@@ -9,5 +9,6 @@
 		<action name="api/{version}/login" class="com.cric11.utility.MatchSquad"></action>
 		<action name="api/{version}/check" class="com.cric11.utility.MatchSquad" method="stringCheck"></action>
 		<action name="api/{version}/timercheck" class="com.cric11.utility.MatchSquad" method="timerCheck"></action>
+		<action name="api/{version}/sendemail" class="com.cric11.user.VerifyUser"></action>
 	</package>
 </struts>
